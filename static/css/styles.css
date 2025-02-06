@@ -1,0 +1,41 @@
+   
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   height: 100vh;
+   margin: 0;
+    background-color: green;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+h1 {
+    font-family: fantasy, sans-serif;
+    font-size: 30px;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-shadow: 3px 3px 5px black;
+    margin-bottom: 20px;
+}
+canvas {
+    background-color: green;
+    display: block;
+}
+#message, #counter {
+    font-size: 24px;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    font-weight: bold;
+    margin-top: 10px;
+}
