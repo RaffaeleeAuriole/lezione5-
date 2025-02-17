@@ -25,9 +25,10 @@ body {
     text-align: center;
 }
 
-h1, h2 {
-    font-size: 36px; 
-    text-shadow: 3px 3px 6px black;
+h1, h2 {    
+    font-family: fantasy, sans-serif;
+    font-size: 36px;
+    color: white;
 }
 
 #points, #message, #counter {
@@ -47,6 +48,12 @@ h1, h2 {
     padding-left: 0;
     text-align: center;
     font-size: 24px; 
+    background: black;
+    border-radius: 10px;
+    font-size: 25px; 
+    font-weight: bold;
+    margin: 15px 0; 
+    padding: 15px
 }
 
 .right-panel ul li {
