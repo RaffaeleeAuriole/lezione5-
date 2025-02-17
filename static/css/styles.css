@@ -1,15 +1,26 @@
-   
 body {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-   height: 100vh;
-   margin: 0;
+    height: 100vh;
+    margin: 0;
     background-color: green;
-    background-size: cover;
     font-family: Arial, sans-serif;
 }
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
 h1 {
     font-family: fantasy, sans-serif;
     font-size: 30px;
@@ -20,15 +31,11 @@ h1 {
     text-align: center;
     width: 300px;
     font-weight: bold;
-    margin-top: 10px;
     text-shadow: 3px 3px 5px black;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
-canvas {
-    background-color: green;
-    display: block;
-}
-#message, #counter {
+
+#points, #message, #counter {
     font-size: 24px;
     color: white;
     background: rgba(0, 0, 0, 0.7);
@@ -38,4 +45,9 @@ canvas {
     width: 300px;
     font-weight: bold;
     margin-top: 10px;
+}
+
+canvas {
+    background-color: green;
+    display: block;
 }
