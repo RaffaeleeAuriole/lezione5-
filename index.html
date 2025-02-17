@@ -4,20 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tiro a Segno</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
     <link rel="stylesheet" href="static/css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script> 
 </head>
 <body>
-    <div class="game-container">
-        <div class="info-container">
+    <div class="container">
+        <div class="left-panel">
             <h1>Tiro a Segno</h1>
             <div id="points">Punti Totali: 0</div>
             <div id="message">Fai un tiro!</div>
             <div id="counter">Centri: 0</div>
         </div>
-        <div id="canvas-container">
-            <script src="static/js/script.js"></script>
+        <div class="canvas-container">
+            <div id="canvas"></div>
+        </div>
+        <div class="right-panel">
+            <h2>Regole del Gioco</h2>
+            <ul>
+                <li>Colpisci il bersaglio per guadagnare punti</li>
+                <li>Giallo: +35 punti</li>
+                <li>Rosso: +25 punti</li>
+                <li>Blu: +15 punti</li>
+                <li>Nero: +10 punti</li>
+                <li>Bianco: +5 punti</li>
+            </ul>
         </div>
     </div>
+    <script src="static/js/script.js"></script>
 </body>
 </html>

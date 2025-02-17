@@ -1,12 +1,11 @@
 let centerX = 300;
 let centerY = 300;
-let targetRadius = 80;
-let hits = 0;
 let totalPoints = 0;
+let hits = 0;
 
 function setup() {
     let cnv = createCanvas(600, 600);
-    cnv.style('background-color', 'green');
+    cnv.parent('canvas');
     cnv.mousePressed(checkHit);
     noLoop();
 }
@@ -38,7 +37,7 @@ function checkHit() {
     if (d < 40) {
         score = 35;
         feedback = "Bravo! Hai fatto centro, +35pt";
-        hits++; // Aumenta i centri solo se colpisce il giallo
+        hits++; 
     } else if (d < 80) {
         score = 25;
         feedback = "Ci sei quasi, +25pt";
@@ -52,14 +51,19 @@ function checkHit() {
         score = 5;
         feedback = "Non ci siamo, +5pt";
     }
-    
+
     if (score > 0) {
         totalPoints += score;
         message.textContent = feedback;
     } else {
         message.textContent = "Ritenta, sarai più fortunato!";
     }
-    
+
     counter.textContent = "Centri: " + hits;
     pointsDisplay.textContent = "Punti Totali: " + totalPoints;
+
+    stroke(0);
+    strokeWeight(5);
+    line(mouseX - 5, mouseY, mouseX + 5, mouseY); // Linea orizzontale
+    line(mouseX, mouseY - 5, mouseX, mouseY + 5); // Linea verticale
 }
